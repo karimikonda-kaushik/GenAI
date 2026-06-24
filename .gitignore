@@ -1,0 +1,29 @@
+# Environment and secrets
+.env
+*.env
+!.env.example
+
+# Credentials and keys
+*.json
+!package.json
+*API*Key*.txt
+*App*Password*.txt
+*Password*.txt
+
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# Local databases and runtime state
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+last_row.txt
+
+# OS and IDE
+.DS_Store
+.vscode/

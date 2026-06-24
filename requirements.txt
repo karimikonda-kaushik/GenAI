@@ -1,0 +1,10 @@
+google-ai-generativelanguage
+langchain
+langchain-google-genai
+langgraph
+langgraph-checkpoint-sqlite
+langgraph-checkpoint-postgres
+psycopg[binary]
+python-dotenv
+requests
+flask
