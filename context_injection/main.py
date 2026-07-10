@@ -45,7 +45,7 @@ documents = load_documents(directory)
 context = create_context(documents)
 print(context)
 
-big_string = "Rabbit Company revenue in 2025 was 45,000"
+#big_string = "Rabbit Company revenue in 2025 was 45,000"
 system_prompt = f"""
 you are a helpful assistant that answers questions about the these documents: {context}
 """
