@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: rag-config
+  labels:
+    app: rag-app
+data:
+  REQUIRE_AUTH: "true"
+  CORS_ORIGINS: "http://rag.local,http://127.0.0.1"
+  RATE_LIMIT_CHAT: "20/minute"
+  RATE_LIMIT_UPLOAD: "10/minute"
+  RATE_LIMIT_DEFAULT: "60/minute"
+  DEV_USER_ID: "dev-user"

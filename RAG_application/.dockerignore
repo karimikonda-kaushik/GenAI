@@ -1,0 +1,13 @@
+**/.venv
+**/__pycache__
+**/*.pyc
+**/node_modules
+**/.git
+.env
+**/.env
+frontend/dist
+backend/.venv
+*.md
+database/
+docker-compose.yml
+k8s/secret.yaml
