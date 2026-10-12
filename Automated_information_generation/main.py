@@ -7,7 +7,7 @@ from pprint import pprint
 
 load_dotenv()
 
-queries = ["coffee health benefits", "organic coffee benefits studies", "coffee antioxidats wellness"]
+queries = ["AI news this week", "AI companies latest models news", "Ai impact on businesses and jobs"]
 
 def search_for_articles(queries):
     tavily_search = TavilySearch(
@@ -29,8 +29,8 @@ def search_for_articles(queries):
 
 def generate_newsletter(search_results):
     prompt = f"""
-    you are a professional newsletter writer for an organic coffee business.
-    below are the search results for this week's coffee news. Each results includes content and the source url.
+    you are a professional newsletter writer for an AI news business.
+    below are the search results for this week's AI news. Each results includes content and the source url.
 
     SEARCH RESULTS:
     {search_results}
@@ -38,7 +38,7 @@ def generate_newsletter(search_results):
     write the article in markdown format.
 
     Rules:
-    - Focus on the positive news about coffee 
+    - Focus on the positive news about AI and recent improvements in AI technology and companies. 
     - Provide references using the URL's from the SEARCH RESULTS
     - Use Bold and italic text to highlight the most important information
     """
